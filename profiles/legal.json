@@ -1,0 +1,133 @@
+{
+  "id": "legal",
+  "name": "Legal writing",
+  "audience": "A client or colleague reading an opinion, a brief, or a contract schedule.",
+  "deliverables": [
+    "Opinion letter",
+    "Memorandum",
+    "Schedule"
+  ],
+  "page": {
+    "pptx": {
+      "width_in": 13.3333333333,
+      "height_in": 7.5,
+      "margin_in": 0.58
+    },
+    "docx": {
+      "paper": "A4",
+      "margins_mm": {
+        "top": 25,
+        "bottom": 22,
+        "left": 28,
+        "right": 25
+      }
+    },
+    "pdf": {
+      "paper": "a4",
+      "margins_mm": {
+        "top": 22,
+        "bottom": 22,
+        "left": 24,
+        "right": 24
+      }
+    },
+    "xlsx": {
+      "paper": "A3"
+    }
+  },
+  "type": {
+    "pptx": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "mono": "Liberation Mono"
+    },
+    "docx": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "body_pt": 12
+    },
+    "xlsx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC"
+    },
+    "pdf": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "sans": "Liberation Serif",
+      "ea_sans": "Noto Serif CJK SC",
+      "body_pt": 11.5,
+      "heading_pt": 14,
+      "justify": false,
+      "first_line_indent_em": 0,
+      "number_headings": true
+    },
+    "scale": {
+      "cover_title": 32,
+      "cover_sub": 16,
+      "kicker": 13,
+      "action_title": 20,
+      "section_title": 32,
+      "close_title": 28,
+      "body": 14,
+      "insight": 14,
+      "pull": 18,
+      "table": 12,
+      "caption": 12,
+      "source": 10
+    }
+  },
+  "palette": {
+    "ink": "111111",
+    "paper": "FFFFFF",
+    "muted": "444444",
+    "line": "222222",
+    "accent": "111111",
+    "mark": "111111",
+    "dark": "111111",
+    "on_dark": "FFFFFF",
+    "on_dark_muted": "DDDDDD",
+    "series": [
+      "111111",
+      "555555",
+      "888888"
+    ],
+    "dominance": "Black on white. Color is not a signal. A quotation rule is black."
+  },
+  "labels": {
+    "zh": {
+      "illustrative": "示意",
+      "recommend": "建议",
+      "source": "资料"
+    },
+    "en": {
+      "illustrative": "Illustrative",
+      "recommend": "Recommend",
+      "source": "Source"
+    }
+  },
+  "tones": {
+    "cover": "light",
+    "section": "light",
+    "close": "light",
+    "content": "light"
+  },
+  "model": {
+    "input_font": "0000FF",
+    "formula_font": "000000",
+    "cross_font": "008000",
+    "input_fill": "FFFF99",
+    "external_font": "FF0000"
+  },
+  "primitives": [
+    "action",
+    "table",
+    "comparison",
+    "close",
+    "cover"
+  ],
+  "data_policy": {
+    "invent_precise_statistics": false,
+    "illustrative_label_required": true,
+    "rule": "Do not invent case names, docket numbers, or article text. Quote a statute only when the words are known. Say what was not reviewed."
+  }
+}

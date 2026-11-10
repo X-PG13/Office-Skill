@@ -1,0 +1,133 @@
+{
+  "id": "academic",
+  "name": "Academic note",
+  "audience": "A reader of a discussion note, working paper, or methods appendix.",
+  "deliverables": [
+    "Discussion note",
+    "Working paper",
+    "Methods appendix"
+  ],
+  "page": {
+    "pptx": {
+      "width_in": 13.3333333333,
+      "height_in": 7.5,
+      "margin_in": 0.58
+    },
+    "docx": {
+      "paper": "A4",
+      "margins_mm": {
+        "top": 25,
+        "bottom": 22,
+        "left": 25,
+        "right": 25
+      }
+    },
+    "pdf": {
+      "paper": "a4",
+      "margins_mm": {
+        "top": 22,
+        "bottom": 22,
+        "left": 24,
+        "right": 24
+      }
+    },
+    "xlsx": {
+      "paper": "A3"
+    }
+  },
+  "type": {
+    "pptx": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "mono": "Liberation Mono"
+    },
+    "docx": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "body_pt": 12
+    },
+    "xlsx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC"
+    },
+    "pdf": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "sans": "Liberation Sans",
+      "ea_sans": "Noto Sans CJK SC",
+      "body_pt": 11,
+      "heading_pt": 13,
+      "justify": true,
+      "first_line_indent_em": 0,
+      "number_headings": true
+    },
+    "scale": {
+      "cover_title": 34,
+      "cover_sub": 16,
+      "kicker": 13,
+      "action_title": 20,
+      "section_title": 32,
+      "close_title": 28,
+      "body": 15,
+      "insight": 14,
+      "pull": 18,
+      "table": 12,
+      "caption": 12,
+      "source": 10
+    }
+  },
+  "palette": {
+    "ink": "1A1A1A",
+    "paper": "FFFFFF",
+    "muted": "4A4A4A",
+    "line": "CCCCCC",
+    "accent": "1A1A1A",
+    "mark": "1A1A1A",
+    "dark": "1A1A1A",
+    "on_dark": "FFFFFF",
+    "on_dark_muted": "DDDDDD",
+    "series": [
+      "1A1A1A",
+      "555555",
+      "888888"
+    ],
+    "dominance": "A journal page: serif text, numbered headings, captions. No decorative cover."
+  },
+  "labels": {
+    "zh": {
+      "illustrative": "示意",
+      "recommend": "建议",
+      "source": "资料"
+    },
+    "en": {
+      "illustrative": "Illustrative",
+      "recommend": "Recommend",
+      "source": "Source"
+    }
+  },
+  "tones": {
+    "cover": "light",
+    "section": "light",
+    "close": "light",
+    "content": "light"
+  },
+  "model": {
+    "input_font": "0000FF",
+    "formula_font": "000000",
+    "cross_font": "008000",
+    "input_fill": "FFFF99",
+    "external_font": "FF0000"
+  },
+  "primitives": [
+    "cover",
+    "action",
+    "chart",
+    "table",
+    "close"
+  ],
+  "data_policy": {
+    "invent_precise_statistics": false,
+    "illustrative_label_required": true,
+    "rule": "Citations must be real works. No fabricated DOI, sample size, or p-value. A limitations section is required."
+  }
+}

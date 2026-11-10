@@ -1,0 +1,140 @@
+{
+  "id": "consulting",
+  "name": "Consulting / strategy exhibit",
+  "audience": "A leadership team deciding a course of action.",
+  "deliverables": [
+    "Discussion deck",
+    "Board exhibit",
+    "Decision memo"
+  ],
+  "page": {
+    "pptx": {
+      "width_in": 13.3333333333,
+      "height_in": 7.5,
+      "margin_in": 0.58
+    },
+    "docx": {
+      "paper": "A4",
+      "margins_mm": {
+        "top": 25,
+        "bottom": 22,
+        "left": 25,
+        "right": 25
+      }
+    },
+    "pdf": {
+      "paper": "a4",
+      "margins_mm": {
+        "top": 22,
+        "bottom": 22,
+        "left": 24,
+        "right": 24
+      }
+    },
+    "xlsx": {
+      "paper": "A3"
+    }
+  },
+  "type": {
+    "pptx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC",
+      "mono": "Liberation Mono"
+    },
+    "docx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC",
+      "body_pt": 11
+    },
+    "xlsx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC"
+    },
+    "pdf": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "sans": "Liberation Sans",
+      "ea_sans": "Noto Sans CJK SC",
+      "body_pt": 11,
+      "heading_pt": 14,
+      "justify": true,
+      "first_line_indent_em": 0,
+      "number_headings": true
+    },
+    "scale": {
+      "cover_title": 34,
+      "cover_sub": 16,
+      "kicker": 13,
+      "action_title": 22,
+      "section_title": 32,
+      "close_title": 28,
+      "body": 15,
+      "insight": 14,
+      "pull": 18,
+      "table": 12,
+      "caption": 12,
+      "source": 10
+    }
+  },
+  "palette": {
+    "ink": "1A1F1C",
+    "paper": "FFFFFF",
+    "muted": "5E6962",
+    "line": "D5DBD6",
+    "accent": "0F6A4A",
+    "mark": "C4A46A",
+    "dark": "1A1F1C",
+    "on_dark": "F4F6F4",
+    "on_dark_muted": "C5CDC7",
+    "negative": "8C3A2F",
+    "series": [
+      "1A1F1C",
+      "0F6A4A",
+      "8B938C",
+      "C4A46A"
+    ],
+    "dominance": "Paper and ink carry the page. Accent appears on the recommended option and on one chart series, not as a band."
+  },
+  "labels": {
+    "zh": {
+      "illustrative": "示意",
+      "recommend": "建议",
+      "source": "资料"
+    },
+    "en": {
+      "illustrative": "Illustrative",
+      "recommend": "Recommend",
+      "source": "Source"
+    }
+  },
+  "tones": {
+    "cover": "dark",
+    "section": "dark",
+    "close": "dark",
+    "content": "light"
+  },
+  "model": {
+    "input_font": "0000FF",
+    "formula_font": "000000",
+    "cross_font": "008000",
+    "input_fill": "FFFF99",
+    "external_font": "FF0000"
+  },
+  "primitives": [
+    "cover",
+    "section",
+    "action",
+    "chart",
+    "table",
+    "matrix",
+    "timeline",
+    "comparison",
+    "steps",
+    "close"
+  ],
+  "data_policy": {
+    "invent_precise_statistics": false,
+    "illustrative_label_required": true,
+    "rule": "If the user did not supply a figure, omit it or mark the exhibit illustrative. Do not invent a source, a case, or a DOI."
+  }
+}

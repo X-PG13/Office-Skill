@@ -1,0 +1,28 @@
+{
+  "file": "/workspace/examples/out/legal-docx/opinion.docx",
+  "passed": true,
+  "checks": [
+    {
+      "name": "ooxml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "placeholders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "docx_styles_and_fonts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "render",
+      "passed": true,
+      "detail": "3 page(s)"
+    }
+  ],
+  "preview_pages": 3,
+  "preview_dir": "/workspace/examples/out/legal-docx/preview"
+}

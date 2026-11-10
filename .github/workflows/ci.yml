@@ -1,0 +1,31 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: System packages
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            libreoffice \
+            poppler-utils \
+            fonts-noto-cjk \
+            fonts-liberation \
+            fontconfig
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+      - name: Lint
+        run: python -m ruff check . && python -m ruff format --check .
+      - name: Tests
+        run: python -m pytest
+      - name: Example gates
+        run: python scripts/qa/check_examples.py
