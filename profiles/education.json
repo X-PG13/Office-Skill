@@ -1,0 +1,139 @@
+{
+  "id": "education",
+  "name": "Education",
+  "audience": "A teacher or a student using a handout, a lesson sheet, or a unit-cost model.",
+  "deliverables": [
+    "学习单",
+    "教案",
+    "单位成本表"
+  ],
+  "page": {
+    "pptx": {
+      "width_in": 13.3333333333,
+      "height_in": 7.5,
+      "margin_in": 0.58
+    },
+    "docx": {
+      "paper": "A4",
+      "margins_mm": {
+        "top": 25,
+        "bottom": 22,
+        "left": 25,
+        "right": 25
+      }
+    },
+    "pdf": {
+      "paper": "a4",
+      "margins_mm": {
+        "top": 18,
+        "bottom": 18,
+        "left": 18,
+        "right": 18
+      }
+    },
+    "xlsx": {
+      "paper": "A3"
+    }
+  },
+  "type": {
+    "pptx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC",
+      "mono": "Liberation Mono"
+    },
+    "docx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC",
+      "body_pt": 11
+    },
+    "xlsx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC"
+    },
+    "pdf": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "sans": "Liberation Sans",
+      "ea_sans": "Noto Sans CJK SC",
+      "body_pt": 12,
+      "heading_pt": 16,
+      "justify": false,
+      "first_line_indent_em": 2,
+      "number_headings": false
+    },
+    "scale": {
+      "cover_title": 32,
+      "cover_sub": 16,
+      "kicker": 13,
+      "action_title": 22,
+      "section_title": 32,
+      "close_title": 28,
+      "body": 16,
+      "insight": 14,
+      "pull": 18,
+      "table": 12,
+      "caption": 12,
+      "source": 10
+    }
+  },
+  "palette": {
+    "ink": "1C2430",
+    "paper": "FFFFFF",
+    "muted": "5C6770",
+    "line": "D5D8DC",
+    "accent": "1F4B7A",
+    "mark": "1F4B7A",
+    "dark": "1C2430",
+    "on_dark": "F7F8F8",
+    "on_dark_muted": "C9D0D6",
+    "series": [
+      "1C2430",
+      "1F4B7A",
+      "6D7A86",
+      "C5CED6"
+    ],
+    "dominance": "Quiet school document. One blue for a step number. No stickers, no rainbow boxes."
+  },
+  "labels": {
+    "zh": {
+      "illustrative": "示意",
+      "recommend": "建议",
+      "source": "资料"
+    },
+    "en": {
+      "illustrative": "Illustrative",
+      "recommend": "Recommend",
+      "source": "Source"
+    }
+  },
+  "tones": {
+    "cover": "light",
+    "section": "light",
+    "close": "light",
+    "content": "light"
+  },
+  "model": {
+    "input_font": "0000FF",
+    "formula_font": "000000",
+    "cross_font": "008000",
+    "input_fill": "FFFF99",
+    "external_font": "FF0000"
+  },
+  "primitives": [
+    "cover",
+    "section",
+    "action",
+    "chart",
+    "table",
+    "matrix",
+    "timeline",
+    "comparison",
+    "steps",
+    "close"
+  ],
+  "data_policy": {
+    "invent_precise_statistics": false,
+    "illustrative_label_required": true,
+    "rule": "Worked examples must calculate correctly. Answer keys are separated, not hidden in jokes."
+  }
+}

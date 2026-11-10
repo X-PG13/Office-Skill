@@ -1,0 +1,140 @@
+{
+  "id": "product",
+  "name": "Product / engineering",
+  "audience": "An engineering or product review deciding a design.",
+  "deliverables": [
+    "Design proposal",
+    "Review deck",
+    "Decision record"
+  ],
+  "page": {
+    "pptx": {
+      "width_in": 13.3333333333,
+      "height_in": 7.5,
+      "margin_in": 0.62
+    },
+    "docx": {
+      "paper": "A4",
+      "margins_mm": {
+        "top": 25,
+        "bottom": 22,
+        "left": 25,
+        "right": 25
+      }
+    },
+    "pdf": {
+      "paper": "a4",
+      "margins_mm": {
+        "top": 22,
+        "bottom": 22,
+        "left": 24,
+        "right": 24
+      }
+    },
+    "xlsx": {
+      "paper": "A3"
+    }
+  },
+  "type": {
+    "pptx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC",
+      "mono": "Liberation Mono"
+    },
+    "docx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC",
+      "body_pt": 11
+    },
+    "xlsx": {
+      "latin": "Liberation Sans",
+      "ea": "Noto Sans CJK SC"
+    },
+    "pdf": {
+      "latin": "Liberation Serif",
+      "ea": "Noto Serif CJK SC",
+      "sans": "Liberation Sans",
+      "ea_sans": "Noto Sans CJK SC",
+      "body_pt": 11,
+      "heading_pt": 14,
+      "justify": true,
+      "first_line_indent_em": 0,
+      "number_headings": true
+    },
+    "scale": {
+      "cover_title": 32,
+      "cover_sub": 16,
+      "kicker": 13,
+      "action_title": 22,
+      "section_title": 32,
+      "close_title": 28,
+      "body": 15,
+      "insight": 14,
+      "pull": 18,
+      "table": 12,
+      "caption": 12,
+      "source": 10
+    }
+  },
+  "palette": {
+    "ink": "102126",
+    "paper": "FFFFFF",
+    "muted": "4E6066",
+    "line": "D5DEE0",
+    "accent": "0C6B66",
+    "mark": "0C6B66",
+    "dark": "102126",
+    "on_dark": "F3F6F6",
+    "on_dark_muted": "C5D0D2",
+    "negative": "8E3B32",
+    "series": [
+      "102126",
+      "0C6B66",
+      "7E9296",
+      "C5D0D2"
+    ],
+    "dominance": "White page, ink text, one teal used for the step numbers and the emphasized bar."
+  },
+  "labels": {
+    "zh": {
+      "illustrative": "示意",
+      "recommend": "建议",
+      "source": "资料"
+    },
+    "en": {
+      "illustrative": "Illustrative",
+      "recommend": "Recommend",
+      "source": "Source"
+    }
+  },
+  "tones": {
+    "cover": "light",
+    "section": "light",
+    "close": "light",
+    "content": "light"
+  },
+  "model": {
+    "input_font": "0000FF",
+    "formula_font": "000000",
+    "cross_font": "008000",
+    "input_fill": "FFFF99",
+    "external_font": "FF0000"
+  },
+  "primitives": [
+    "cover",
+    "section",
+    "action",
+    "chart",
+    "table",
+    "matrix",
+    "timeline",
+    "comparison",
+    "steps",
+    "close"
+  ],
+  "data_policy": {
+    "invent_precise_statistics": false,
+    "illustrative_label_required": true,
+    "rule": "Name the constraint. If a latency or a metric was not measured, label the trace illustrative."
+  }
+}

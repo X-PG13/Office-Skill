@@ -1,0 +1,28 @@
+{
+  "file": "/workspace/examples/out/consulting-pptx/deck.pptx",
+  "passed": true,
+  "checks": [
+    {
+      "name": "ooxml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "placeholders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pptx_layout_and_fonts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "render",
+      "passed": true,
+      "detail": "8 page(s)"
+    }
+  ],
+  "preview_pages": 8,
+  "preview_dir": "/workspace/examples/out/consulting-pptx/preview"
+}
