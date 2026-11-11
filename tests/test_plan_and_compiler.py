@@ -33,13 +33,13 @@ def test_plan_rejects_placeholder_and_unsourced_chart():
         "file_type": "pptx",
         "domain": "consulting",
         "language": "zh",
-        "title": "标题",
+        "title": "Title",
         "slides": [
             {
                 "primitive": "chart",
-                "title": "成本更高",
-                "categories": ["甲"],
-                "series": [{"name": "值", "values": [1]}],
+                "title": "Title",
+                "categories": ["A"],
+                "series": [{"name": "Value", "values": [1]}],
                 "insight": "TODO fill this",
             }
         ],
@@ -54,8 +54,8 @@ def test_academic_requires_limitations():
         "file_type": "pdf",
         "domain": "academic",
         "language": "en",
-        "title": "A note",
-        "sections": [{"heading": "Claim", "blocks": [{"type": "paragraph", "text": "Text."}]}],
+        "title": "Title",
+        "sections": [{"heading": "Section 1", "blocks": [{"type": "paragraph", "text": "Text."}]}],
     }
     with pytest.raises(PlanError):
         validate_plan(plan, profile)

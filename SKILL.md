@@ -70,7 +70,7 @@ The command writes `gate.json`. `passed: false` means fix the plan or the conten
 | product | pptx | problem, constraint, decision |
 | brand | pdf or pptx | one idea, the product's own words |
 | government | docx | 公文 profile, GB/T 9704 measurements |
-| education | pdf or xlsx | worked example that actually computes |
+| education | pdf or xlsx | a calculation shown in full |
 
 ## Hard rules
 

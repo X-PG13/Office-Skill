@@ -20,7 +20,7 @@ bash scripts/install_tools.sh
 python -m pip install -e ".[dev]"
 ```
 
-WeasyPrint 是可选的 HTML 转 PDF 路径，不在默认依赖里。示例都走 Typst。
+WeasyPrint 是可选的 HTML 转 PDF 路径，不在默认依赖里。默认 PDF 路径是 Typst。
 
 ## 用法
 
@@ -64,57 +64,12 @@ python -m office_skill gate deliverable.pptx --plan plan.json --preview-dir /tmp
 4. 用现有原语试渲一页封面。原语不够时再改对应引擎，不要在计划里写坐标。
 5. 别名写在 `office_skill/profiles.py` 的 `ALIASES`。
 
-## 示例
-
-`examples/plans/` 是计划，`examples/out/` 是成稿、闸门结果和 PNG。下面每张图都过了闸门。
-
-咨询讨论稿（中文 PPTX）：
-
-![咨询封面](examples/out/consulting-pptx/preview/page-1.png)
-
-![咨询图表](examples/out/consulting-pptx/preview/page-3.png)
-
-产品评审（英文 PPTX）：
-
-![产品封面](examples/out/product-pptx/preview/page-1.png)
-
-法律意见书（中文 DOCX）：
-
-![法律意见书](examples/out/legal-docx/preview/page-1.png)
-
-公文通知（中文 DOCX）：
-
-![公文](examples/out/government-docx/preview/page-1.png)
-
-财务模型（英文 XLSX，示意案例，净现值低于门槛）：
-
-![财务结果](examples/out/finance-xlsx/preview/page-4.png)
-
-课后服务单位成本（中文 XLSX）：
-
-![成本测算](examples/out/education-xlsx/preview/page-3.png)
-
-讨论稿（英文 PDF）：
-
-![学术笔记](examples/out/academic-pdf/preview/page-1.png)
-
-七年级学习单（中文 PDF）：
-
-![比例尺](examples/out/education-pdf/preview/page-1.png)
-
-重新生成：
-
-```bash
-python scripts/generate_examples.py
-```
-
 ## 已知限制
 
 - v1 只生成新文件，不能安全地改一份已有的复杂 Office 文件。
 - 字体不嵌入。阅读端没有 Noto CJK 和 Liberation 时，换行会变。公文的小标宋、仿宋、黑体用这两种开源字体代替，所以做不到每行恰好 28 字。
 - Excel 公式在 LibreOffice 里重算。不要用 `XLOOKUP`、`FILTER` 等它算不了的函数。
 - 目录是 Word 域。未在 Word 中打开时，页码可能还是缓存的标题列表。
-- 示例里的机构、公司和数字都是虚构的，不是法律意见、投资建议或已经发出的公文。
 - 不包含 PyMuPDF。PDF 栅格化用 `pdftoppm`。
 
 ## English

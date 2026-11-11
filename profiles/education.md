@@ -8,7 +8,7 @@ Tokens: `profiles/education.json`. White page, ink `#1C2430`, one blue `#1F4B7A`
 
 Typst. Chinese sheets use Noto Serif CJK SC at 12 pt, first-line indent 2 em, headings in Noto Sans CJK SC. Put the answer key after a `page_break`, with its own heading, so the working page stands alone.
 
-A worked example must be arithmetically right. Show the unit conversion, not only the result. Name the common error in a sentence, not in a warning icon.
+A calculation shown to the reader must be arithmetically right. Show the unit conversion, not only the result. Name the common error in a sentence, not in a warning icon.
 
 English sheets use the same template with Liberation Serif and `language: en`. Do not set a 2 em indent on English; override is not required if you keep paragraphs short — the profile indent applies to the education PDF, so write English education plans as `language: zh` only when the sheet is Chinese. For an English sheet, the indent is a limitation of this profile; keep paragraphs to one or two sentences so the indent does not look like a letter.
 
@@ -22,8 +22,8 @@ If the prompt asks for slides, use the consulting primitives with these tokens: 
 
 ## Forbidden
 
-Emoji section markers. "Let's dive in." Fake school letterhead of a real school. An answer that does not match the question.
+Emoji section markers. Filler openers. Fake school letterhead of a real school. An answer that does not match the question.
 
 ## Data
 
-Enrollment, prices, and hours in a sample model are scenario assumptions with a source note that says so. A mathematics item is not "illustrative" if the arithmetic is the point — it has to be correct.
+Enrollment, prices, and hours that were not measured are scenario assumptions, and the source note says so. A mathematics item is not "illustrative" if the arithmetic is the point — it has to be correct.

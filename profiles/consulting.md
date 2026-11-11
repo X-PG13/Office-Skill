@@ -18,7 +18,7 @@ Ink `#1A1F1C` on white. Accent `#0F6A4A` only for the recommended column and, if
 
 `cover`, `section`, `action`, `chart`, `table`, `matrix`, `timeline`, `comparison`, `steps`, `close`.
 
-One message per slide, usually one exhibit. An action title states the finding ("重叠覆盖区的单件成本高于枢纽辐射区"), not the topic ("成本分析"). Every content slide has a source or `illustrative: true`. The renderer prefixes 示意 / Illustrative.
+One message per slide, usually one exhibit. An action title states the finding in a sentence. It does not name only the topic. Every content slide has a source or `illustrative: true`. The renderer prefixes 示意 / Illustrative.
 
 ## Grammar
 

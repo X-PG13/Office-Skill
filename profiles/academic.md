@@ -18,7 +18,7 @@ Safe pattern: make an argument, cite a work you know exists, and say what this n
 
 ## Forbidden
 
-Decorative covers. Emoji section markers. Fake DOIs. "Key takeaways" as a section title. A bibliography of plausible-looking names.
+Decorative covers. Emoji section markers. Fake DOIs. A section title the gate treats as generic. A bibliography of plausible-looking names.
 
 ## Chinese
 

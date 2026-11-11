@@ -51,4 +51,4 @@ Blocks: `paragraph`, `list` (`items`), `quote`, `math` (`tex` is Typst math, not
 
 Optional: `authors` (`name`, `affiliation`), `date`, `abstract`, `keywords`, `running_head`, `classification`, `references` (`id`, `label`, `text`). Cite with `[@id]` inside paragraph text. Academic plans need a limitations section. Do not include a `doi` key.
 
-`pdf_engine: weasyprint` renders a plain HTML letter. It is optional and not used by the samples.
+`pdf_engine: weasyprint` renders a plain HTML letter. It is optional.
