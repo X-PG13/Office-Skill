@@ -134,6 +134,6 @@
   "data_policy": {
     "invent_precise_statistics": false,
     "illustrative_label_required": true,
-    "rule": "Worked examples must calculate correctly. Answer keys are separated, not hidden in jokes."
+    "rule": "A calculation shown to the reader must be arithmetically correct. Answer keys are separated, not hidden in jokes."
   }
 }

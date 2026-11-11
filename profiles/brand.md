@@ -10,7 +10,7 @@ One idea per page, in the product's own nouns. A headline can be a sentence the 
 
 ## Forbidden
 
-Default purple gradients. Stock photographs of people you do not have rights to. Fake customer quotes. Fake ratings and "10,000 teams trust us" without a source. Emoji. The cream-and-terracotta pair.
+Default purple gradients. Stock photographs of people you do not have rights to. Fake customer quotes. Fake ratings and unsourced claims about how many people use the product. Emoji. The cream-and-terracotta pair.
 
 ## Data
 

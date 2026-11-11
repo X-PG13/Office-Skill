@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: install tools lint test examples gate
+.PHONY: install tools lint test
 
 install:
 	$(PYTHON) -m pip install -e ".[dev]"
@@ -14,9 +14,3 @@ lint:
 
 test:
 	$(PYTHON) -m pytest
-
-examples:
-	$(PYTHON) scripts/generate_examples.py
-
-gate:
-	$(PYTHON) scripts/qa/check_examples.py

@@ -20,13 +20,12 @@ from scripts.qa.soffice import convert
 
 def _cover(domain: str) -> dict:
     language = "zh" if domain in {"government", "education"} else "en"
-    title = "一份具体的判断" if language == "zh" else "A specific claim about the work"
     return {
         "file_type": "pptx",
         "domain": domain,
         "language": language,
-        "title": title,
-        "slides": [{"primitive": "cover", "kicker": "Note", "title": title, "meta": "2026"}],
+        "title": "Title",
+        "slides": [{"primitive": "cover", "kicker": "Note", "title": "Title", "meta": "1"}],
     }
 
 
@@ -43,13 +42,13 @@ def test_legal_docx_has_toc_numbering_and_east_asian_font(tmp_path: Path):
         "file_type": "docx",
         "domain": "legal",
         "language": "zh",
-        "title": "关于违约金的法律意见书",
-        "header_left": "事项",
-        "header_right": "示例",
+        "title": "Title",
+        "header_left": "Left",
+        "header_right": "Right",
         "blocks": [
-            {"type": "heading", "level": 1, "text": "范围"},
-            {"type": "paragraph", "text": "只审阅了复印件。", "numbered": True},
-            {"type": "definition", "term": "「合同」", "text": "指双方所称的买卖合同。"},
+            {"type": "heading", "level": 1, "text": "Section 1"},
+            {"type": "paragraph", "text": "Section 1", "numbered": True},
+            {"type": "definition", "term": "Term", "text": "Section 2"},
         ],
     }
     target = tmp_path / "note.docx"
@@ -68,20 +67,20 @@ def test_gongwen_uses_red_only_as_a_header_signal(tmp_path: Path):
         "domain": "government",
         "language": "zh",
         "doc_kind": "gongwen",
-        "title": "临湾市教育局关于调整作息的通知",
+        "title": "Title",
         "gongwen": {
-            "org": "临湾市教育局",
-            "doc_number": "临教基〔2026〕1号",
-            "recipients": "各学校：",
-            "signoff": "临湾市教育局",
-            "date": "2026年11月10日",
-            "copy_to": "市财政局。",
-            "print_org": "临湾市教育局办公室",
-            "print_date": "2026年11月10日印发",
+            "org": "Org",
+            "doc_number": "No. 1",
+            "recipients": "To",
+            "signoff": "Org",
+            "date": "Date",
+            "copy_to": "Copy",
+            "print_org": "Org",
+            "print_date": "Date",
         },
         "blocks": [
-            {"type": "paragraph", "level": 0, "text": "自下周一起执行。"},
-            {"type": "paragraph", "level": 1, "text": "一、时间"},
+            {"type": "paragraph", "level": 0, "text": "Section 1"},
+            {"type": "paragraph", "level": 1, "text": "Section 2"},
         ],
     }
     target = tmp_path / "notice.docx"
@@ -94,26 +93,26 @@ def test_xlsx_formulas_colors_and_recalc(tmp_path: Path):
         "file_type": "xlsx",
         "domain": "finance",
         "language": "en",
-        "title": "Tiny case",
+        "title": "Title",
         "illustrative": True,
-        "years": ["Y0", "Y1"],
+        "years": ["A", "B"],
         "assumptions": [
             {
                 "id": "g",
-                "label": "Growth",
+                "label": "Input",
                 "value": 0.1,
                 "format": "0%",
                 "unit": "rate",
-                "note": "case",
-                "source": "scenario",
+                "note": "note",
+                "source": "source",
             }
         ],
         "rows": [
-            {"id": "base", "label": "Base", "values": [10, 10], "format": "0"},
-            {"id": "rev", "label": "Revenue", "expr": "base*(1+g)**year_index", "format": "0.00"},
+            {"id": "base", "label": "Row", "values": [1, 1], "format": "0"},
+            {"id": "rev", "label": "Row 2", "expr": "base*(1+g)**year_index", "format": "0.00"},
         ],
-        "highlights": [{"label": "Y1", "row": "rev", "year_index": 1, "format": "0.00"}],
-        "paragraphs": ["Illustrative."],
+        "highlights": [{"label": "B", "row": "rev", "year_index": 1, "format": "0.00"}],
+        "paragraphs": ["Section 1"],
     }
     target = tmp_path / "m.xlsx"
     render_plan(plan, target)
@@ -137,31 +136,31 @@ def test_academic_pdf_compiles(tmp_path: Path):
         "file_type": "pdf",
         "domain": "academic",
         "language": "en",
-        "title": "A short note",
-        "classification": "Discussion note",
-        "authors": [{"name": "Ke Lin", "affiliation": "Independent"}],
+        "title": "Title",
+        "classification": "Note",
+        "authors": [{"name": "Author", "affiliation": "Org"}],
         "sections": [
             {
-                "heading": "Claim",
-                "blocks": [{"type": "paragraph", "text": "The title should state the comparison."}],
+                "heading": "Section 1",
+                "blocks": [{"type": "paragraph", "text": "Section 1"}],
             },
             {
-                "heading": "What this note does not show",
-                "blocks": [{"type": "paragraph", "text": "No experiment was run."}],
+                "heading": "Limitations",
+                "blocks": [{"type": "paragraph", "text": "Section 2"}],
             },
         ],
         "references": [
             {
-                "id": "cleveland1984",
-                "label": "Cleveland and McGill, 1984",
-                "text": "Cleveland, W. S., and McGill, R. (1984). Graphical Perception.",
+                "id": "ref1",
+                "label": "Ref 1",
+                "text": "Author. Title.",
             }
         ],
     }
     target = tmp_path / "note.pdf"
     render_plan(plan, target)
     assert check_pdf(target) == []
-    assert "comparison" in (PdfReader(str(target)).pages[0].extract_text() or "")
+    assert "Section" in (PdfReader(str(target)).pages[0].extract_text() or "")
     assert target.with_suffix(".typ").is_file()
 
 
@@ -172,11 +171,11 @@ def test_weasy_html_has_no_script_and_uses_the_ink():
     html = build_html(
         {
             "language": "en",
-            "title": "A letter",
+            "title": "Title",
             "sections": [
                 {
-                    "heading": "Matter",
-                    "blocks": [{"type": "paragraph", "text": "We read the copies."}],
+                    "heading": "Section 1",
+                    "blocks": [{"type": "paragraph", "text": "Section 1"}],
                 }
             ],
         },
@@ -189,11 +188,11 @@ def test_weasy_html_has_no_script_and_uses_the_ink():
 def test_bulk_dataframe_write(tmp_path: Path):
     from openpyxl import Workbook
 
-    frame = pd.DataFrame({"Zone": ["Hub"], "Cost": [6.4]})
+    frame = pd.DataFrame({"Column": ["A"], "Value": [1]})
     wb = Workbook()
     write_dataframe(wb.active, frame)
     path = tmp_path / "t.xlsx"
     wb.save(path)
     again = load_workbook(path)
-    assert again.active["A1"].value == "Zone"
-    assert again.active["A2"].value == "Hub"
+    assert again.active["A1"].value == "Column"
+    assert again.active["A2"].value == "A"

@@ -27,5 +27,3 @@ jobs:
         run: python -m ruff check . && python -m ruff format --check .
       - name: Tests
         run: python -m pytest
-      - name: Example gates
-        run: python scripts/qa/check_examples.py

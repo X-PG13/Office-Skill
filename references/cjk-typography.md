@@ -26,7 +26,7 @@ Install them before QA (`scripts/install_tools.sh`). If the desktop that opens t
 ## Composition
 
 - Simplified Chinese uses fullwidth punctuation ：，。；「」. No space between a Han character and a fullwidth mark.
-- Dates in 公文: `2026年11月10日`, Arabic digits, no leading zero on the month or day, no space.
+- Dates in 公文 use Arabic digits in year, month, day order, with 年, 月, and 日, no leading zero on the month or day, and no spaces.
 - Body indent for 公文 and for a Chinese lesson sheet is 2 em. Do not justify a one-line sentence; the last line, and any short line, will stretch.
 - Slide titles are left aligned. Centered CJK titles with a decorative underline are a template habit, not a consulting habit.
 - Do not letter-space a line to force 28 characters. With Noto that looks worse than a ragged edge.

@@ -20,7 +20,7 @@ Chinese opinions use fullwidth punctuation and defined terms in 「」. No contr
 
 ## Forbidden
 
-Color blocks. Informal hedging ("basically", "显然没问题"). Placeholder party names left as 甲方某某. Invented docket numbers.
+Color blocks. Informal hedging. Placeholder party names. Invented docket numbers.
 
 ## Data
 

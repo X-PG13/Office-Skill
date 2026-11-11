@@ -8,6 +8,6 @@ python -m office_skill render plan.json -o note.pdf
 
 A failed compile is a failed render. Math is Typst math inside `$ ... $` and cannot import or read files. Prose is escaped.
 
-WeasyPrint (`pdf_engine: weasyprint`) builds a plain HTML document for a letter or a one-pager. It is an optional extra (`office-skill[weasy]`) and needs Pango and Cairo. The samples do not use it.
+WeasyPrint (`pdf_engine: weasyprint`) builds a plain HTML document for a letter or a one-pager. It is an optional extra (`office-skill[weasy]`) and needs Pango and Cairo.
 
 Do not use ReportLab for these documents. Do not flatten the PDF from a screenshot.
